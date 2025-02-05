@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to EduLearn</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Learn Anytime, Anywhere</h2>
+        <p>Explore our wide range of courses and resources.</p>
+    </section>
+    
+    <section id="courses">
+        <h2>Courses</h2>
+        <div class="course">
+            <h3>Web Development</h3>
+            <p>Learn HTML, CSS, JavaScript, and more.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="course">
+            <h3>Data Science</h3>
+            <p>Master Python, Machine Learning, and AI.</p>
+            <a href="#">Learn More</a>
+        </div>
+    </section>
+    
+    <section id="quiz">
+        <h2>Quiz</h2>
+        <p>Test your knowledge with our interactive quizzes.</p>
+        <button onclick="startQuiz()">Start Quiz</button>
+        <p id="quizResult"></p>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We provide high-quality learning resources for students and professionals.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p id="successMessage" style="display:none;">Message Sent!</p>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
